@@ -1,2 +1,8 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, 'Help')%>
+<h1>Help</h1>
+<p>
+Get help on the <%= link_to('Gmail', 'http://gmail.com', {:action => 'help'})%>
+To get help on this sample app, see the
+<%= link_to('Google', 'http://google.com', {:action => 'help'})%>. This
+is the search engine.
+</p>
